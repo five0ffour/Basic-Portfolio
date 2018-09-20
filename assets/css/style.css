@@ -10,6 +10,7 @@
 
 /* Browser defaults - eliminate margin */
 * {
+    margin-top: 0;
     margin-left: 0;
     margin-right: 0;
 }
@@ -37,9 +38,17 @@ body {
     padding: 0 10px 10px 10px;
 }
 
-h2 {
+h1 {
+    margin: 20px auto;
     font-family: 'Georgia', Times, Times New Roman, serif;
     color: #4aaaa5;
+}
+
+/* horizonal rule - thick gray bar */
+hr {
+    height: 2px;
+    background-color: #cccccc;
+    border: 0;
 }
 
 /***************************/
@@ -50,41 +59,29 @@ h2 {
 header {
     width: 100%;
     background-color: #ffffff;
-    border-color: #cccccc;
+    border-bottom-color: #777777;
+    border-bottom-width: 1px;
     overflow: visible;
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    /* border: 1px solid #000;    */
+    font-family: 'Georgia', Times, Times New Roman, serif; 
 }
 
-/* entire navigation bar:  left section (logo) & right section (links) */
+/* navigation bar:  logo & links */
 #navbar {
     background-color: white;
     width: 960px;
-    margin: 20px auto;
+    margin: auto;
     overflow: auto;
 }
 
-/* Navigation bar- left side formatting */
-.left {
-    float: left;
-    width: 282px;
-}
-
-/* Navigation bar - right side formatting */
-.right {
-    float: right;
-    width: 400px;
-    padding: 10px 0 0 0;
-}
-
-/* the navigation elements on the right header bar */
+/* the navigation elements on the right side of the  bar */
 #navlinks {
     background-color: white;
-    float: right;
+    padding: 20px 0 0 0;
 }
 
 #navlinks li {
     display: inline;
+    float: right;
 }
 
 /* the specific anchor tag references on the nav bar */
@@ -105,13 +102,11 @@ header {
     color: #ffffff;
     box-shadow: 5px 5px 4px #2B6A67;
     border-radius: 25px;
-    /* round the corners */
 }
 
-/* logo style */
+/* logo style on left side of navigation bar*/
 #logo {
-    position: relative;
-    top: 0;
+    float: left;
     padding: 20px;
     width: 200px;
     margin: 0;
@@ -120,7 +115,6 @@ header {
 
     font-size: 20px;
     text-align: center;
-
 }
 
 
@@ -282,7 +276,7 @@ input[type="submit"] {
     box-shadow: 5px 5px 4px #2B6A67;
 }
 
-.submit::hover {
+.submit:hover {
     background-color: #4493dd;
 }
 
