@@ -61,49 +61,47 @@ header {
     background-color: #ffffff;
     border-bottom-color: #777777;
     border-bottom-width: 1px;
-    overflow: visible;
     font-family: 'Georgia', Times, Times New Roman, serif; 
 }
 
+.navigation li a {
+    display: inline-block;
+    text-decoration: none;
+    float: right;
+    /* margin-right: 10px; */
+
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 18px;
+    color: #777777;
+    margin: 20px 15px 0 15px;
+    padding: 0 5px 0 5px;
+  }
+
+  .navigation li {
+    display: inline-block;
+  }
+
+  .navigation ul {
+    text-align: right;
+  }
+
 /* navigation bar:  logo & links */
-#navbar {
+.navigation {
     background-color: white;
     width: 960px;
+    height: 63px;
     margin: auto;
     overflow: auto;
 }
 
-/* the navigation elements on the right side of the  bar */
-#navlinks {
-    background-color: white;
-    padding: 20px 0 0 0;
-}
-
-#navlinks li {
-    display: inline;
-    float: right;
-}
-
-/* the specific anchor tag references on the nav bar */
-#navlinks a {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 18px;
-    color: #777777;
-    margin: 0 15px 0 15px;
-    padding: 0 5px 0 5px;
-    text-decoration: none;
-    text-align: center;
-}
-
 /* Hover effect - highlight background and border it */
-#navlinks a:hover {
+.navigation a:hover {
+    margin: 6px  6px 0 0 ;
     background-color: #4493dd;
-    padding: 10px;
-    border: 1px solid #ddd;
     color: #ffffff;
+    padding: 8px;
     box-shadow: 5px 5px 4px #2B6A67;
-    border-radius: 10px;
-}
+  }
 
 /* logo style on left side of navigation bar*/
 #logo {
