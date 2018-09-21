@@ -32,18 +32,24 @@
             <section id="Contact">
                 <h1>Contact</h1>
                 <hr>
+                <br>
 
                 <form id="contactform" action="#foo">
-                    <p>Name:</p>
-                    <input type="text" name="fullname" size="135">
-                    <p>Email:</p>
-                    <input type="email" name="email" size="135">
-                    <p>Message:</p>
-                    <textarea name="message" cols="120" rows="10"></textarea>
+                    <label>
+                        Name:
+                        <input type="text" name="fullname" size="135" value="Your Full Name">
+                    </label>
+                    <label>
+                        Email:
+                        <input type="email" name="email" size="135" value="example@gmail.com">
+                    </label>
+                    <label>
+                        Message:
+                        <textarea name="message" cols="120" rows="10"></textarea>
+                    </label>
                     <br>
                     <input id="contactbtn" type="submit" value="Submit">
                 </form>
-
             </section>
         </div>
     </div>
